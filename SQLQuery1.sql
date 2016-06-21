@@ -1,0 +1,24 @@
+BEGIN TRANSACTION;
+CREATE TABLE [Users] (
+    [ID] INTEGER PRIMARY KEY AUTOINCREMENT,
+    [Username] TEXT NOT NULL,
+    [Email] TEXT NOT NULL
+);
+CREATE TABLE [UserProject] (
+  [UserID] INTEGER NOT NULL,
+  [ProjectId] INTEGER NOT NULL
+);
+CREATE TABLE "Tickets" (
+	`ID`	INTEGER PRIMARY KEY AUTOINCREMENT,
+	`TaskName`	TEXT NOT NULL,
+	`ProjectID`	INTEGER,
+	`Estimation`	REAL NOT NULL,
+	`CreatedDate`	DATETIME DEFAULT CURRENT_TIMESTAMP,
+	`Duration`	REAL,
+	`UserId`	INTEGER
+);
+CREATE TABLE [Project] (
+                [ID] INTEGER PRIMARY KEY AUTOINCREMENT,
+                [Name] VARCHAR NOT NULL
+                );
+COMMIT;

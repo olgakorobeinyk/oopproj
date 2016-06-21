@@ -1,0 +1,128 @@
+c:\users\olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\TimeManagement.exe.config
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\TimeManagement.exe
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\TimeManagement.pdb
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TimeManagement.csprojResolveAssemblyReference.cache
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\FormView.baml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\FormView.g.cs
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\App.g.cs
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TimeManagement_MarkupCompile.cache
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TimeManagement.g.resources
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TimeManagement.Properties.Resources.resources
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TimeManagement.csproj.GenerateResource.Cache
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TimeManagement.exe
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TimeManagement.pdb
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TimeManagement_MarkupCompile.lref
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TasksListView.baml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\TasksListView.g.cs
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\EntityFramework.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\System.Data.SQLite.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\EntityFramework.xml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\bin\Debug\System.Data.SQLite.xml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\WindowProject.baml
+C:\Users\Olga\documents\visual studio 2013\Projects\TimeManagement\TimeManagement\obj\Debug\WindowProject.g.cs
+D:\study\ooplab\TimeManagement\bin\Debug\TimeManagement.exe.config
+D:\study\ooplab\TimeManagement\obj\Debug\TimeManagement.exe
+D:\study\ooplab\TimeManagement\obj\Debug\TimeManagement.pdb
+D:\study\ooplab\TimeManagement\bin\Debug\TimeManagement.exe
+D:\study\ooplab\TimeManagement\bin\Debug\TimeManagement.pdb
+D:\study\ooplab\TimeManagement\bin\Debug\EntityFramework.dll
+D:\study\ooplab\TimeManagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\study\ooplab\TimeManagement\bin\Debug\GalaSoft.MvvmLight.dll
+D:\study\ooplab\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\study\ooplab\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\study\ooplab\TimeManagement\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\study\ooplab\TimeManagement\bin\Debug\System.Data.SQLite.dll
+D:\study\ooplab\TimeManagement\bin\Debug\System.Data.SQLite.EF6.dll
+D:\study\ooplab\TimeManagement\bin\Debug\System.Data.SQLite.Linq.dll
+D:\study\ooplab\TimeManagement\bin\Debug\System.Windows.Interactivity.dll
+D:\study\ooplab\TimeManagement\bin\Debug\EntityFramework.xml
+D:\study\ooplab\TimeManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\study\ooplab\TimeManagement\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\study\ooplab\TimeManagement\bin\Debug\GalaSoft.MvvmLight.xml
+D:\study\ooplab\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\study\ooplab\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\study\ooplab\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\study\ooplab\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\study\ooplab\TimeManagement\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\study\ooplab\TimeManagement\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\study\ooplab\TimeManagement\bin\Debug\System.Data.SQLite.xml
+D:\study\ooplab\TimeManagement\obj\Debug\TimeManagement.csprojResolveAssemblyReference.cache
+D:\study\ooplab\TimeManagement\obj\Debug\WindowProject.baml
+D:\study\ooplab\TimeManagement\obj\Debug\NewTicketView.g.cs
+D:\study\ooplab\TimeManagement\obj\Debug\TasksListView.g.cs
+D:\study\ooplab\TimeManagement\obj\Debug\WindowProject.g.cs
+D:\study\ooplab\TimeManagement\obj\Debug\App.g.cs
+D:\study\ooplab\TimeManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\study\ooplab\TimeManagement\obj\Debug\TimeManagement_MarkupCompile.cache
+D:\study\ooplab\TimeManagement\obj\Debug\TimeManagement_MarkupCompile.lref
+D:\study\ooplab\TimeManagement\obj\Debug\NewTicketView.baml
+D:\study\ooplab\TimeManagement\obj\Debug\TasksListView.baml
+D:\study\ooplab\TimeManagement\obj\Debug\TimeManagement.g.resources
+D:\study\ooplab\TimeManagement\obj\Debug\TimeManagement.Properties.Resources.resources
+D:\study\ooplab\TimeManagement\obj\Debug\TimeManagement.csproj.GenerateResource.Cache
+D:\study\ooplab\TimeManagement\obj\Debug\Main.g.cs
+D:\study\ooplab\TimeManagement\obj\Debug\Main.baml
+D:\study\ooplab\TimeManagement\obj\Debug\NewProject.g.cs
+D:\study\ooplab\TimeManagement\obj\Debug\NewProject.baml
+D:\study\ooplab\TimeManagement\obj\Debug\NewUserView.g.cs
+D:\study\ooplab\TimeManagement\obj\Debug\NewUserView.baml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\TimeManagement.exe.config
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\TimeManagement.exe
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\TimeManagement.pdb
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\TimeManagement.exe
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\TimeManagement.pdb
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\EntityFramework.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\System.Data.SQLite.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\EntityFramework.xml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\bin\Debug\System.Data.SQLite.xml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\Main.g.cs
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\NewProject.g.cs
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\NewTicketView.g.cs
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\NewUserView.g.cs
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\App.g.cs
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\TimeManagement_MarkupCompile.cache
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\TimeManagement_MarkupCompile.lref
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\Main.baml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\NewProject.baml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\NewTicketView.baml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\NewUserView.baml
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\TimeManagement.g.resources
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\TimeManagement.Properties.Resources.resources
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\TimeManagement.csproj.GenerateResource.Cache
+C:\Users\Olga\Downloads\ooplab-master\TimeManagement\obj\Debug\TimeManagement.csprojResolveAssemblyReference.cache
