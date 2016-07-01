@@ -12,6 +12,7 @@ namespace TimeManagement
         private long Id;
         private string Username;
         private string Email;
+        private bool isNew = false;
         private ObservableCollection<UserProj> UserProjects = new ObservableCollection<UserProj>();
 
         public string name
@@ -23,18 +24,6 @@ namespace TimeManagement
             set
             {
                 this.name = value;
-            }
-        }
-
-        public Boolean Selected
-        {
-            get
-            {
-                return true;
-            }
-            set
-            {
-                this.Selected = value;
             }
         }
 
@@ -155,6 +144,12 @@ namespace TimeManagement
             }
 
             return false;
+        }
+
+        public void delete()
+        {
+            DBHelper.getInstance().deleteUser(this);
+            isNew = true;
         }
     }
 }

@@ -112,6 +112,10 @@
     <Compile Include="DBHelper.cs" />
     <Compile Include="Ticket.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UserListView.xaml.cs">
+      <DependentUpon>UserListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserListViewModel.cs" />
     <Compile Include="UserProj.cs" />
     <Page Include="Main.xaml">
       <SubType>Designer</SubType>
@@ -134,6 +138,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="NewUserView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

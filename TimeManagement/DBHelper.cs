@@ -231,6 +231,13 @@ namespace TimeManagement
             return user;
         }
 
+        public void deleteUser(User user)
+        {
+
+            this.getCommand(String.Format("Delete from Users where Id = {0}", user.getId()))
+                .ExecuteNonQuery();
+        }
+
         public ObservableCollection<User> getUsers()
         {
             ObservableCollection<User> up = new ObservableCollection<User>();

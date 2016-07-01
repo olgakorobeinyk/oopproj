@@ -1,0 +1,36 @@
+﻿<Window x:Class="TimeManagement.UserListView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeManagement"
+        mc:Ignorable="d"
+        Title="UserListView" Height="300" Width="300">
+    <Window.DataContext>
+        <local:UserListViewModel />
+    </Window.DataContext>
+    <Grid>
+        <DataGrid x:Name="UserList" HorizontalAlignment="Left" Margin="70,101,0,0" VerticalAlignment="Top" ItemsSource="{Binding Users}">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Delete">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Button Content="Delete" Click="Button_Click"></Button>
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Edit">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Button Content="Edit" Click="Button_Click_1"></Button>
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

@@ -29,5 +29,7 @@ namespace TimeManagement
             ((NewUserViewModel)this.DataContext).save();
             this.Close();
         }
+
+
     }
 }

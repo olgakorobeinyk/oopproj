@@ -72,5 +72,11 @@ namespace TimeManagement
                 dc.setTickets((Project)ProjectCBModel.SelectedItem, (User)UserCBModel.SelectedItem);
             } 
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            UserListView userListView = new UserListView();
+            userListView.Show();
+        }
     }
 }

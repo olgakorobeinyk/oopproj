@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TimeManagement"
         mc:Ignorable="d"
-        Title="Main" Height="300" Width="300">
+        Title="Main" Height="400" Width="600">
     <Window.DataContext>
         <local:MainView />
     </Window.DataContext>
@@ -13,6 +13,7 @@
         
         <Grid>
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="95"></ColumnDefinition>
                 <ColumnDefinition Width="95"></ColumnDefinition>
                 <ColumnDefinition Width="95"></ColumnDefinition>
                 <ColumnDefinition Width="95"></ColumnDefinition>
@@ -28,6 +29,7 @@
             <Button Content="Add ticket" Margin="5"  Grid.Column="0" Click="Button_Click"></Button>
             <Button Content="Add Project" Margin="5" Grid.Column="1" Click="Button_Click_1"></Button>
             <Button Content="Add User" Margin="5"  Grid.Column="2" Click="Button_Click_2"></Button>
+            <Button Content="View Users" Margin="5" Grid.Column="3" Click="Button_Click_3"></Button>
             <Label Content="Filter Tickets" FontSize="20" Grid.Row="2" Grid.ColumnSpan="3"></Label>
             <Label Content="Project" Grid.Row="3" FontSize="17" Margin="0,4"></Label>
             <Label Content="User" Grid.Row="3" Grid.Column="1" Margin="0,4" FontSize="17"></Label>

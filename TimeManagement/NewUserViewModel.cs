@@ -18,6 +18,7 @@ namespace TimeManagement
             this.user = new User();
         }
 
+
         public void setUser(User user)
         {
             this.user = user;
