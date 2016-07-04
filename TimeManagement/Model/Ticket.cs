@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TimeManagement.Resource;
 
-namespace TimeManagement
+namespace TimeManagement.Model
 {
-    public class Ticket
+    public class Ticket : Model
     {
         public string TaskName { get; set; }
         public string EstimationTime { get; set; }
@@ -17,6 +18,10 @@ namespace TimeManagement
         public long UserId;
         private User User;
         private long projectId;
+        private ProjectResource ProjectResource = new ProjectResource();
+        private TicketResource TicketResource = new TicketResource();
+        private UserResource UserResource = new UserResource();
+
         public long ProjectId
         {
             get {
@@ -40,20 +45,25 @@ namespace TimeManagement
                 return this.Project;
             }
 
-            return this.Project = DBHelper.getInstance().getProject(ProjectId);
+            return this.Project = this.ProjectResource.getProject(ProjectId);
         }
 
-        public void save()
+        public override void save()
         {
             if (this.Id == 0)
             {
-                DBHelper.getInstance().createTicket(this);
+                this.Id = this.TicketResource.createTicket(this.TaskName, this.EstimationTime.ToString(), this.ProjectId, this.UserId);
             }
             else
             {
-                DBHelper.getInstance().updateTicket(this);
+                this.TicketResource.updateTicket(TaskName, EstimationTime, ProjectId, UserId, Id);
             }
 
+        }
+
+        public override void delete()
+        {
+            //this.ProjectResource.DeleteProject
         }
 
         public void setUser(User user)
@@ -68,14 +78,14 @@ namespace TimeManagement
 
         public User getUser()
         {
-            if (this.User != null )
+            if (this.User != null)
             {
                 return this.User;
             }
             
             if (this.UserId != 0)
             {
-                this.User = DBHelper.getInstance().getUser(this.UserId);
+                this.User = this.UserResource.getUser(this.UserId);
             }
 
             return this.User;

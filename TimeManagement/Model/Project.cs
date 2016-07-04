@@ -4,15 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
+using TimeManagement.Resource;
 
-namespace TimeManagement
+namespace TimeManagement.Model
 {
-    public class Project
+    public class Project : Model
     {
         private long Id;
-        private string Name;
+        public string Name { set; get; }
         private ObservableCollection<Ticket> Tickets = new ObservableCollection<Ticket>();
         private ObservableCollection<UserProj> UserProjects = new ObservableCollection<UserProj>();
+        protected UserProjResource UserProjResource = new UserProjResource();
+        protected ProjectResource ProjectResource = new ProjectResource();
+        protected TicketResource TicketResource = new TicketResource();
 
         public void setName(string name)
         {
@@ -24,7 +28,7 @@ namespace TimeManagement
             this.Id = ID;
         }
 
-        public string getName()
+        public virtual string getName()
         {
             return this.Name;
         }
@@ -44,7 +48,7 @@ namespace TimeManagement
             this.Tickets = Tickets;
         }
 
-        public ObservableCollection<Ticket> getTickets()
+        public virtual ObservableCollection<Ticket> getTickets()
         {
             return this.Tickets;
         }
@@ -123,35 +127,54 @@ namespace TimeManagement
             }
         }
 
-        public void save()
+        public override void save()
         {
             if (this.Id == 0)
             {
-                DBHelper.getInstance().CreateProject(this);
+                this.ProjectResource.CreateProject(this);
             }
             else
             {
-                DBHelper.getInstance().UpdateProject(this);
+                this.ProjectResource.UpdateProject(this);
             }
 
             foreach (Ticket ticket in this.Tickets)
             {
                 ticket.ProjectId = this.getId();
-                DBHelper.getInstance().updateTicket(ticket);            
+                this.TicketResource.updateTicket(
+                    ticket.TaskName, 
+                    ticket.EstimationTime, 
+                    ticket.ProjectId, 
+                    ticket.UserId, 
+                    ticket.Id
+                );            
             }
 
-            DBHelper.getInstance().processUserProjects(this);
+            this.UserProjResource.processUserProjects(this);
 
             foreach (UserProj up in this.UserProjects)
             {
-                DBHelper.getInstance().processUserProj(up);
+                this.UserProjResource.processUserProj(up);
             }
+        }
+
+        public override void delete()
+        {
+            this.ProjectResource.DeleteProject(this);
         }
 
         public Boolean hasUser(User user)
         {
             foreach(UserProj up in this.UserProjects)
             {
+                if (up.getUser() == null)
+                {
+                    this.UserProjects.Remove(up);
+                    up.setDelete();
+                    up.delete();
+                    continue;
+
+                }
                 if (up.getUser().getId() == user.getId())
                 {
                     return true;

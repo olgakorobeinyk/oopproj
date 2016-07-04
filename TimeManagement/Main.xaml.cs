@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TimeManagement.Model;
 
 namespace TimeManagement
 {
@@ -59,7 +60,7 @@ namespace TimeManagement
             {
                 dc.setUsersByProject((Project)projectComboModel.SelectedItem);
                 dc.setTickets((Project)projectComboModel.SelectedItem);
-            }
+            } 
         }
 
         private void UserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -78,5 +79,12 @@ namespace TimeManagement
             UserListView userListView = new UserListView();
             userListView.Show();
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            ProjectsListView ProjectListView = new ProjectsListView();
+            ProjectListView.Show();
+        }
+
     }
 }

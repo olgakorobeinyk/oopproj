@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TimeManagement.Resource;
 
-namespace TimeManagement
+namespace TimeManagement.Model
 {
-    public class UserProj
+    public class UserProj : Model
     {
         private User User;
         private Project Project;
         private long UserId;
         private long ProjectId;
-        private bool Delete = false; 
+        private bool Delete = false;
+        private UserResource UserResource = new UserResource();
+        private ProjectResource ProjectResource = new ProjectResource();
+        private UserProjResource UserProjResource = new UserProjResource();
 
         public UserProj(User User, Project Project)
         {
@@ -50,7 +54,7 @@ namespace TimeManagement
         {
             if (this.Project == null)
             {
-                this.Project = DBHelper.getInstance().getProject(this.ProjectId);
+                this.Project = this.ProjectResource.getProject(this.ProjectId);
             }
 
             return this.Project;
@@ -60,7 +64,7 @@ namespace TimeManagement
         {
             if (this.User == null)
             {
-                this.User = DBHelper.getInstance().getUser(this.UserId);
+                this.User = this.UserResource.getUser(this.UserId);
             }
             return this.User;
         }
@@ -84,6 +88,16 @@ namespace TimeManagement
         public void unsetDelete()
         {
             this.Delete = false;
+        }
+
+        public override void save()
+        {
+
+        }
+
+        public override void delete()
+        {
+            this.UserProjResource.deleteUserProj(UserId, ProjectId);
         }
     }
 }

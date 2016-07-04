@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using System.Collections.ObjectModel;
+using TimeManagement.Model;
+using TimeManagement.Resource;
 
 namespace TimeManagement
 {
@@ -25,10 +27,14 @@ namespace TimeManagement
             get;set;
         }
 
+        private ProjectResource ProjectResource = new ProjectResource();
+
         public  MainView() : base()
         {
-            this.Projects = DBHelper.getInstance().getProjects();
+            this.Projects = this.ProjectResource.getProjects();
+            this.Projects.Insert(0, new EmptyProject());
             this.Users = new ObservableCollection<User>();
+
             this.Tickets = new ObservableCollection<Ticket>();
         }
         
@@ -40,27 +46,32 @@ namespace TimeManagement
 
         public void setTickets(Project project)
         {
+            if (project.GetType().Name == "EmptyProject")
+            {
+
+            }
             this.Tickets = project.getTickets();
             RaisePropertyChanged("Tickets");
         }
 
         public void setTickets(Project project, User user)
         {
+            Type t = project.GetType();
+            
             this.Tickets = project.getTickets(user);
             RaisePropertyChanged("Tickets");
         }
 
         public void reloadProjects()
         {
-            this.Projects = DBHelper.getInstance().getProjects();
+            this.Projects = this.ProjectResource.getProjects();
             RaisePropertyChanged("Projects");
+
             this.Users = new ObservableCollection<User>();
             RaisePropertyChanged("Users");
             
             this.Tickets = new ObservableCollection<Ticket>();
             RaisePropertyChanged("Tickets");
-            
-            
         }
     }
 }

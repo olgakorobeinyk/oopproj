@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using System.Collections.ObjectModel;
+using TimeManagement.Model;
 
 namespace TimeManagement
 {
@@ -27,6 +28,15 @@ namespace TimeManagement
         {
             user.delete();
             this.Users.Remove(user);
+            RaisePropertyChanged("Users");
+        }
+
+        public void UsersPropertyChanged(User user)
+        {
+            int index = this.Users.IndexOf(user);
+            this.Users.RemoveAt(index);
+            this.Users.Insert(index, user);
+            this.RaisePropertyChanged("Users");
         }
     }
 }

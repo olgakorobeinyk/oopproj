@@ -8,7 +8,7 @@ using System.Windows;
 using System.IO;
 using System.Data;
 using System.Collections.ObjectModel;
-
+using TimeManagement.Model;
 namespace TimeManagement
 {
     public class DBHelper : Window
@@ -83,7 +83,7 @@ namespace TimeManagement
             sqlTransaction.Commit();
         }
 
-        public void createTicket (Ticket ticket)
+         void createTicket (Ticket ticket)
         {
             string query = "INSERT INTO Tickets (TaskName, Estimation, ProjectID, UserId) values('{0}', '{1}', '{2}', '{3}');";
             SQLiteCommand command = this.getCommand(
@@ -131,7 +131,7 @@ namespace TimeManagement
             return command;
         }
 
-        public bool removeColumn(Ticket tik)
+         bool removeColumn(Ticket tik)
         {
             string query = String.Format("DELETE FROM Tickets WHERE ID={0}", tik.Id);
             SQLiteCommand command = this.getCommand(query);

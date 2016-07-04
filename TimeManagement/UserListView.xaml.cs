@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TimeManagement.Model;
 
 namespace TimeManagement
 {
@@ -35,7 +36,6 @@ namespace TimeManagement
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            int test = 1;
             Button button = (Button)sender;
             User user = (User)button.DataContext;
             NewUserView userView = new NewUserView();
@@ -43,11 +43,12 @@ namespace TimeManagement
             contextUserModel.setUser(user);
             
             userView.Show();
+            userView.Closing += (closingSender, closingE) => onUserUpdated(closingSender, closingE, (UserListViewModel)this.DataContext, user);
         }
 
-        public void OnButtonSave(object sender, RoutedEventArgs e)
+        void onUserUpdated(object sender, EventArgs e, UserListViewModel context, User user)
         {
-            int test = 1;
+            context.UsersPropertyChanged(user);
         }
     }
 }

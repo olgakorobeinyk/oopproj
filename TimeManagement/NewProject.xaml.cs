@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Collections;
 using System.Collections.ObjectModel;
+using TimeManagement.Model;
 
 namespace TimeManagement
 {

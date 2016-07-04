@@ -170,3 +170,5 @@ D:\study\TimeManagement\TimeManagement\obj\Debug\UserListView.baml
 D:\study\TimeManagement\TimeManagement\obj\Debug\TimeManagement.g.resources
 D:\study\TimeManagement\TimeManagement\obj\Debug\TimeManagement.Properties.Resources.resources
 D:\study\TimeManagement\TimeManagement\obj\Debug\TimeManagement.csproj.GenerateResource.Cache
+D:\study\TimeManagement\TimeManagement\obj\Debug\ProjectsListView.g.cs
+D:\study\TimeManagement\TimeManagement\obj\Debug\ProjectsListView.baml

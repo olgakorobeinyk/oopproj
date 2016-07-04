@@ -4,28 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
+using TimeManagement.Resource;
 
-namespace TimeManagement
+namespace TimeManagement.Model
 {
-    public class User
+    public class User : Model
     {
         private long Id;
-        private string Username;
-        private string Email;
+        public string Username { set; get; }
+        public string Email { set; get; }
         private bool isNew = false;
         private ObservableCollection<UserProj> UserProjects = new ObservableCollection<UserProj>();
 
-        public string name
-        {
-            get
-            {
-                return this.Username + this.Email;
-            }
-            set
-            {
-                this.name = value;
-            }
-        }
+        private UserProjResource UserProjResource = new UserProjResource();
+        private UserResource UserResource = new UserResource();
+
+
 
         public void setUsername(string name)
         {
@@ -104,18 +98,18 @@ namespace TimeManagement
             return this.UserProjects;
         }
 
-        public void save()
+        public override void save()
         {
             if (this.Id == 0)
             {
-                DBHelper.getInstance().createUser(this);
+                this.UserResource.createUser(this);
             } else {
-                DBHelper.getInstance().updateUser(this);
+                this.UserResource.updateUser(this);
             }
 
             foreach (UserProj up in this.UserProjects)
             {
-                DBHelper.getInstance().processUserProj(up);
+                this.UserProjResource.processUserProj(up);
             }
         }
 
@@ -146,9 +140,9 @@ namespace TimeManagement
             return false;
         }
 
-        public void delete()
+        public override void delete()
         {
-            DBHelper.getInstance().deleteUser(this);
+            this.UserResource.deleteUser(this);
             isNew = true;
         }
     }

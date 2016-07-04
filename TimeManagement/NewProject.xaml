@@ -6,26 +6,26 @@
         xmlns:eo="http://schemas.essentialobjects.com/wpf/"
         xmlns:user="clr-namespace:TimeManagement"
         mc:Ignorable="d"
-        Title="NewProject" Height="180" Width="300">
+        Title="Project" Height="500" Width="700" Background="#cce6ff" >
     <Window.DataContext>
         <user:NewProjectViewModel />
     </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200" />
-            <ColumnDefinition Width="90" />
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="auto" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="90" />
             <RowDefinition Height="90" />
         </Grid.RowDefinitions>
-        <TextBox Grid.Column="0" Width="auto" Margin="5" Text="{Binding name}"></TextBox>
-        <Button Name="SaveButton" Margin="5" Content="Save Project" Grid.Column="1" Click="Button_Click"/>
-        <ListBox Name="UserList"  Grid.Column="0" Grid.Row="1" SelectionMode="Multiple" ItemsSource="{Binding Users}" Loaded="ListBox_Loaded">
+        <Label FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="0">Project name*:</Label>
+        <TextBox FontSize="20" Grid.Column="1" Width="350"  Height="40" Margin="5" Text="{Binding name}"></TextBox>
+        <Label FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1">Assign users for the project:</Label>
+        <ListBox FontSize="20" Name="UserList" Width="350" Height="400"  Grid.Column="1" Grid.Row="1" SelectionMode="Multiple" ItemsSource="{Binding Users}" Loaded="ListBox_Loaded" >
         </ListBox>
-        <!--ComboBox Grid.Column="0" Grid.Row="1" Name="comboBox" HorizontalAlignment="Left" Margin="73,177,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding projectList}" SelectedItem="{Binding CurrentProject}" SelectionChanged="comboBox_SelectionChanged" >
-            
-        </-->
-        
+        <Button FontSize="20"  Name="SaveButton"  Height="40" Content="Save" Grid.Row="2" Grid.Column="1" Click="Button_Click" Background="#fff2cc" />
     </Grid>
 </Window>

@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
 using System.Collections.ObjectModel;
 using System.Collections;
+using TimeManagement.Model;
 
 namespace TimeManagement
 {
@@ -8,12 +9,17 @@ namespace TimeManagement
     {
 
         public Project project;
+
         public ObservableCollection<User> Users
         {
             set;get;
         }
-        
-        
+
+        public string name
+        {
+            set; get;
+        }
+
         public NewProjectViewModel() : base()
         {
             this.project = new Project();
@@ -31,11 +37,6 @@ namespace TimeManagement
         public Project GetProject()
         {
             return this.project;
-        }
-
-        public string name
-        {
-            set;get;
         }
 
         public void Save()

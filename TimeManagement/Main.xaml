@@ -5,38 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TimeManagement"
         mc:Ignorable="d"
-        Title="Main" Height="400" Width="600">
+        Title="Time Management" Height="500" Width="700" Background="#cce6ff">
     <Window.DataContext>
         <local:MainView />
     </Window.DataContext>
     <Grid>
-        
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="95"></ColumnDefinition>
-                <ColumnDefinition Width="95"></ColumnDefinition>
-                <ColumnDefinition Width="95"></ColumnDefinition>
-                <ColumnDefinition Width="95"></ColumnDefinition>
+                <ColumnDefinition Width="130"></ColumnDefinition>
+                <ColumnDefinition Width="130"></ColumnDefinition>
+                <ColumnDefinition Width="130"></ColumnDefinition>
+                <ColumnDefinition Width="130"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
                 <RowDefinition Height="15" ></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="200"></RowDefinition>
             </Grid.RowDefinitions>
-            <Button Content="Add ticket" Margin="5"  Grid.Column="0" Click="Button_Click"></Button>
-            <Button Content="Add Project" Margin="5" Grid.Column="1" Click="Button_Click_1"></Button>
-            <Button Content="Add User" Margin="5"  Grid.Column="2" Click="Button_Click_2"></Button>
-            <Button Content="View Users" Margin="5" Grid.Column="3" Click="Button_Click_3"></Button>
-            <Label Content="Filter Tickets" FontSize="20" Grid.Row="2" Grid.ColumnSpan="3"></Label>
-            <Label Content="Project" Grid.Row="3" FontSize="17" Margin="0,4"></Label>
-            <Label Content="User" Grid.Row="3" Grid.Column="1" Margin="0,4" FontSize="17"></Label>
-            <ComboBox Margin="5"  Grid.Row="4" Grid.Column="0" Name="ProjectList" ItemsSource="{Binding Projects}" SelectionChanged="ProjectList_SelectionChanged"></ComboBox>
-            <ComboBox Margin="5" Grid.Row="4" Grid.Column="1" Name="UserList" ItemsSource="{Binding Users}" SelectionChanged="UserList_SelectionChanged"></ComboBox>
-            <ListBox Name="TicketList"  Grid.ColumnSpan="3" Grid.Row="5" ItemsSource="{Binding Tickets}" />
+            <Button FontSize="15" Height="40"  Content="Add ticket" Margin="5"  Grid.Column="0" Click="Button_Click" Background="#fff2cc"></Button>
+            <Button FontSize="15" Height="40" Content="Add Project" Margin="5" Grid.Column="1" Click="Button_Click_1" Background="#fff2cc"></Button>
+            <Button FontSize="15" Height="40" Content="Add User" Margin="5"  Grid.Column="2" Click="Button_Click_2" Background="#fff2cc"></Button>
+            <Button FontSize="15" Height="40" Content="View Users" Margin="5" Grid.Column="3" Click="Button_Click_3" Background="#fff2cc"></Button>
+            <Button FontSize="15" Height="40" Content="View Projects" Margin="5" Grid.Column="4" Click="Button_Click_4" Background="#fff2cc"></Button>
+
+            <Label Content="Filter Tickets:" FontSize="25" Grid.Row="3" Grid.ColumnSpan="3"></Label>
+            <Label Content="By Project" Grid.Row="4" FontSize="17" Margin="0,5,0,4" HorizontalAlignment="Right"></Label>
+            <Label Content="By User" Grid.Row="4" Grid.Column="2" Margin="0,5,0,4" FontSize="17" HorizontalAlignment="Right"></Label>
+            <ComboBox Margin="5"  Grid.Row="4" Grid.Column="1" Name="ProjectList" ItemsSource="{Binding Projects}" SelectedIndex="0" SelectionChanged="ProjectList_SelectionChanged" Background="#fff2cc" ></ComboBox>
+            <ComboBox Margin="5" Grid.Row="4" Grid.Column="3" Name="UserList" ItemsSource="{Binding Users}" SelectedIndex="0" SelectionChanged="UserList_SelectionChanged" Background="#fff2cc"></ComboBox>
+            <ListBox Name="TicketList"  Grid.ColumnSpan="5" Grid.Row="5" ItemsSource="{Binding Tickets}" Margin="0,0,-17,-79"/>
         </Grid>
-        
+
     </Grid>
 </Window>

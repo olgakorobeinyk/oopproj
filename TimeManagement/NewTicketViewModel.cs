@@ -4,6 +4,7 @@ using System.Windows.Input;
 using GalaSoft.MvvmLight.Messaging;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
+using TimeManagement.Model;
 
 namespace TimeManagement
 {

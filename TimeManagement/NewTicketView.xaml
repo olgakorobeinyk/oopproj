@@ -6,24 +6,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
         mc:Ignorable="d" 
         x:Class="TimeManagement.NewTicketView"
-        Title="{Binding Title}" Height="350" Width="525">
-        <Window.DataContext>
-           <user:NewTicketViewModel />
-        </Window.DataContext>
+        Title="Ticket" Height="500" Width="700" Background="#cce6ff">
+    <Window.DataContext>
+        <user:NewTicketViewModel />
+    </Window.DataContext>
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="28,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="342">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Label FontSize="20" Content="*Task name" HorizontalAlignment="Right" Height="32" RenderTransformOrigin="0.206,0.464" Margin="0,6,28,13"/>
+        <TextBox FontSize="20" Grid.Column="1" HorizontalAlignment="Left" Height="40"  TextWrapping="Wrap"  Width="342">
             <TextBox.Text>
                 <Binding Path="Task">
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="400,103,0,0" TextWrapping="Wrap" Text="{Binding Time}" VerticalAlignment="Top" Width="89"/>
-        <Button Content="Save" Click="Button_Click" HorizontalAlignment="Left" Margin="400,277,0,0" VerticalAlignment="Top" Width="89"/>
-        <Label Content="*Task name" HorizontalAlignment="Left" Margin="28,71,0,0" VerticalAlignment="Top" Width="342" Height="32"/>
-        <Label Content="*Enter time" HorizontalAlignment="Left" Margin="400,71,0,0" VerticalAlignment="Top" Height="32" Width="89"/>
-        <Label Content="*Select Project" HorizontalAlignment="Left" Margin="28,167,0,0" VerticalAlignment="Top" Height="32" Width="89"/>
-        <Label Content="*Select User" HorizontalAlignment="Left" Margin="189,167,0,0" VerticalAlignment="Top" Height="32" Width="89"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="28,209,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Projects}" SelectedItem="{Binding CurrentProject}" SelectionChanged="comboBox_SelectionChanged"></ComboBox>
-        <ComboBox x:Name="UsersBox" HorizontalAlignment="Left" Margin="189,209,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Users}" SelectedItem="{Binding CurrentUser}" ></ComboBox>
+        <Label FontSize="20" Content="*Enter time" HorizontalAlignment="Right" Height="32" Grid.Column="0" Grid.Row="1" Margin="0,5,28,14" />
+        <TextBox FontSize="20" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" Text="{Binding Time}"  Width="200" Grid.Row="1" Grid.Column="1"/>
+        <Label FontSize="20" Grid.Column="0" Grid.Row="2" Content="*Select Project" HorizontalAlignment="Right" Height="32" Margin="0,6,28,13" />
+        <ComboBox FontSize="20" Grid.Column="1" Grid.Row="2" x:Name="comboBox" HorizontalAlignment="Left"  Width="200" Height="40" ItemsSource="{Binding Projects}" SelectedItem="{Binding CurrentProject}" Background="#fff2cc" SelectionChanged="comboBox_SelectionChanged"></ComboBox>
+        <Label FontSize="20" Grid.Row="3" Content="*Select User"  Height="32" HorizontalAlignment="Right" Margin="0,5,28,14" />
+        <ComboBox FontSize="20" Grid.Column="1" Grid.Row="3" x:Name="UsersBox" HorizontalAlignment="Left"  Width="200" Height="40" ItemsSource="{Binding Users}" SelectedItem="{Binding CurrentUser}" Background="#fff2cc"></ComboBox>
+        <Button FontSize="20" Grid.Column="1" Grid.Row="5" Content="Save" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="40" Background="#fff2cc" />
     </Grid>
 </Window>
